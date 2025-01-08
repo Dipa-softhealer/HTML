@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Exercise-(1)</title>
+        <style>
+            table, th, td {
+                border: 1px solid black; 
+                border-collapse:collapse;
+                padding-left: 1rem; 
+                padding-right: 1rem;  
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <h3>Here, If Image is not available then showing the alt text</h3>
+            <!-- when we want to show alternative text in place of image when image is not found or unable to load -->
+            <img src="#" alt="Incorrect Image Path" />
+        </div>
+        <div>
+            <h3>a link for google</h3>
+            <!-- _blank opens the link in new tab -->
+            <a href="https://www.google.com/"  target="_blank" >Google</a>
+        </div>
+        <div>
+             <p id="changeText" onmouseenter="myHoverEffect()">Lorem Ipsum Dolor sit</p>
+        </div>
+
+        <div>
+            <h3>the Poem</h3>
+            <!-- blockquote is used to write the poem without using <br> tag -->
+            <blockquote>
+                <!-- poem should be written here -->
+                My Bonnie lies over the ocean.
+                My Bonnie lies over te sea.
+                My Bonnie lies over the ocean.
+                Oh, bring back my Bonnie to me.
+            </blockquote>
+            
+        </div>
+
+        <div>
+            <!-- to format text here is some of useful tags -->
+            <h1>formated text</h1>
+            <p><b>Lorem Ipsum</b></p>
+            <p><i>Lorem Ipsum</i></p>
+            <p>H<sub>2</sub>O</p>
+            <p>20<sup>th</sup></p>
+            <p><small>I am little</small></p>
+            <p>I am <mark>highlighted</mark> text.</p>
+            <p>My favorite color is <del>Blue</del>Black</p>
+
+        </div>
+
+        <div>
+            <!-- able to show fullform using title attribute text -->
+            <abbr title="Hypertext Markup Language">HTML</abbr>
+        </div>
+
+        <div>
+            
+             <!-- if there is rows combined then use rowspan and colspan otherwise -->
+              <h3>table 1</h3>
+            <table>
+                <tr>
+                    <th rowspan="3">APRIL </th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table><br>
+        </div>
+
+        <div><table>
+            <tr>
+                <th colspan="3"> 2022</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th colspan="2" rowspan="2">FIESTA</th>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+        </table>
+            
+        </div>
+
+        <div>
+            <!-- to make ordered list, there is a <ol> tag -->
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+            </ol>
+        </div>
+
+        <div>
+            <!-- the form with label and coresponding inputs -->
+            <p><strong>NOTE: </strong> First Name field should be Required.</p>
+            <form>
+                <label for="username">First Name</label>
+                <input id="username" type="text" required />
+            <br>
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text"    />
+            <br><br>
+
+            <p><strong>NOTE: </strong> First option of radio is can't choosable.</p>
+
+            <label for="rbn" >Choose your favorite web language</label><br>
+            <input id="rbn" type="radio"  disabled/>HTML<br>
+            <input id="rbn" type="radio" />CSS<br>
+            <input id="rbn" type="radio"  />JavaScript<br>
+            
+            <label for="opt">Choose a car:</label>
+            <select id="opt" size="4">
+                <option>Volvo</option>
+                <option>Saab</option>
+                <option>Flat</option>
+                <option>Audi</option>
+            </select>
+        <br>
+            <textarea placeholder="Write here" rows="4" cols="4"></textarea>
+<br>
+            <label for="file">Select a file<input id="file" type="file" /></label>
+            <br><br><label for="color"> select you favorite color<input id="color" type="color" /></label>
+
+            <p><strong>NOTE: </strong> Quantity field should not allow to enter more than 50 and less than 0.</p>
+            <br>
+            <label for="qnt">Quantity</label>
+            <input id="qnt" type="number" max="50" min="0" />
+            <br>
+
+            <label for="bday">Birthday</label>
+            <input id="bday" type="date" />
+            </form>
+        </div>
+
+        <div>
+            <!-- to add video there is a video tag available in HTML and to show Youtube video there is Iframe tag-->
+            <h1>video content</h1>
+            <video src="/videoID=1.mp4" controls autoplay muted></video>
+        </div>
+
+        <script>
+            function myHoverEffect() {
+                let x = document.querySelector("#changeText").innerText = "I am Dummy Text";
+                //console.log(x);       //debug point   
+            }
+        </script>
+    </body>
+</html>
