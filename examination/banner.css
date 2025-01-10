@@ -1,0 +1,27 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+.banner {
+    width: fit-content;
+    margin: 2rem;
+    border: 1px solid gray;
+    height: 100%;
+}
+
+h3 {
+    color: grey;
+    background-color: plum;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+button {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

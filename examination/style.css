@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+.main-container {
+    display: inline;
+    flex-direction: row;
+    align-self: start;
+}
+/* navbar design */
+.nav {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+
+}
+
+.nav-link {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my table</title>
+    <title>CSS Practice</title>
+
+    <!-- local style -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <h1>Time Table</h1>
-    <div>
+    <h1>Welcome to the CSS Practice Page</h1>
 
-    <table>
-        <!-- 1st row -->
-        <tr>
-            <th>Day/period</th>
-            <th>I<br>9:30-10:20</th>
-            <th>II<br>10:20-11:10</th>
-            <th>III<br>11:10-12:00</th>
-            <th>12:00-12:40</th>
-            <th>IV<br>12:40-1:30</th>
-            <th>V<br>1:30-2:20</th>
-            <th>VI<br>2:20-3:10</th>
-            <th>VII<br>3:10-4:00</th>
-        </tr>
+    <p>This is a paragraph of text.</p>
 
-        <!-- 2nd row -->
-        <tr>
-            <th>MON</th>
-            <td>eng</td>
-            <td>mat</td>
-            <td>che</td>
-            <td rowspan="6"><strong>l<br>u<br>n<br>c<br>h</strong></td>
-            <td colspan="3">LAB</td>
-            <td>phy</td>
-        </tr>
-        <!-- style="text-orientation: upright;writing-mode: vertical-lr;" -->
-        <!-- 3rd row -->
-        <tr>
-            <th>TUE</th>
-            <td colspan="3">LAB</td>
+    <div class="container">
+        <p>This is a highlighted paragraph when we hover a container.</p>
+    </div>
+    <div class="content">
+        <h2>My Contact</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://imgs.search.brave.com/dlO5f9uun_C8CUqjGiqybi1r2FWV6akh-uLQ7K2XuFM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/Mzk5NTc1ODRjZGY0/ODJlNmJkMWU5NmUv/NjNiNzA0ZDAzN2M1/Y2QzZmJmNjMwMTA2/X1NjcmVlbnNob3Ql/MjAyMDIzLTAxLTA1/JTIwYXQlMjAxMC4z/OS41OSUyMFBNLmF2/aWY"
+                        alt="female Employee" />
+                    <div class="card-info">
+                        <p>Angolina Joe</p>
+                        <p class="title">Project Manager</p>
+                        <p>Harvard University</p>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <p><button type="submit">Contact</button></p>
+                    </div>
+                </div>
 
-            <td>eng</td>
-            <td>che</td>
-            <td>mat</td>
-            <td>SPORTS</td>
-        </tr>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://imgs.search.brave.com/jJq2F0LRE4EKuOnXOO5VHL7jJCRR8YEhgZtbQsoVrew/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wdWJs/aWMtaW1hZ2VzLmlu/dGVyYWN0aW9uLWRl/c2lnbi5vcmcvdXNl/ci11cGxvYWRzLzEw/MjIvcHJvZmlsZS1w/aWN0dXJlcy9vcmln/aW5hbC4wZjNmZDUy/NTExYTkzMDNjMDk4/ZWIyOWQxOGQxNGMx/ZC5qcGc_dHI9dy01/NjAsaC01NjA"
+                        alt="female Employee" />
+                    <div class="card-info">
+                        <p>Don Norman</p>
+                        <p class="title">CEO & Founder, Example</p>
+                        <p>Harvard University</p>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <p><button type="submit">Contact</button></p>
+                    </div>
+                </div>
 
-        <!-- 4th row -->
-        <tr>
-            <th>WED</th>
-            <td>mat</td>
-            <td>phy</td>
-            <td>eng</td>
+            </div>
 
-            <td>che</td>
-            <td colspan="3">LIBRARY </td>
-        </tr>
+            <div class="card">
+                <div class="card-body">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="male employee" />
+                    <div class="card-info">
+                        <p>Angolina Joe</p>
+                        <p class="title">Jr.Ethical Hacker</p>
+                        <p>Harvard University</p>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <p><button type="submit">Contact</button></p>
+                    </div>
+                </div>
 
-        <!-- 5th row -->
-        <tr>
-            <th>THU</th>
-            <td>phy</td>
-            <td>eng</td>
-            <td>che</td>
+            </div>
+        </div>
 
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
-        </tr>
-
-        <!-- 6th row -->
-        <tr>
-            <th>FRI</th>
-            <td colspan="3">LAB</td>
-
-            <td>mat</td>
-            <td>che</td>
-            <td>eng</td>
-
-            <td>phy</td>
-        </tr>
-
-        <!-- 7th row -->
-        <tr>
-            <th>SAT</th>
-            <td>eng</td>
-            <td>che</td>
-            <td>mat</td>
-
-            <td colspan="3">SEMINAR </td>
-            <td>SPORTS</td>
-        </tr>
-    </table>
-</div>
-    
+    </div>
 </body>
+
 </html>

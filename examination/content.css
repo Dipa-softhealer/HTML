@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+button {
+    margin: 2rem;
+    padding: 0.5rem;
+    border-top: 1px solid red ;
+    border-right: 1px dotted green;
+    border-bottom:1px dashed blue ;
+    border-left: 1px double black;
+}
+
+.element {
+    padding: 50px;
+    margin: 20px;
+    height: 100px;
+    border: 2px solid black;
+    background: linear-gradient(black, lightgrey)  ;
+    width: fit-content;
+    outline:0.5rem solid grey;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px white;
+}
+
+a {
+    text-decoration: underline;
+    color: grey;
+
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:focus {
+        color: green;
+}
+
+li {
+    list-style-type: square;
+}

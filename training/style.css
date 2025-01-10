@@ -1,18 +1,88 @@
-div {
-    padding-left: 17%;
-    align-items: center;
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  margin: 20px;
 }
-h1 {
-    text-align: center;
-}
-table {
-    border: 5px solid gray;
-    border-collapse: collapse;
 
+h1 {
+  color: #333;
+  text-align: center;
 }
-th, td {
-    padding: 0.5rem;
-    text-align: center;
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+
+p {
+  color: #666;
+}
+
+.container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.container p:hover {
+  color: hotpink;
+  font-weight: bold;
+}
+
+
+
+/* Card Design */
+.card-container {
+    display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  padding: 2rem;
+
+  /* display: flex; */
+  text-align: center;
+  border: 1px inset rgba(192, 192, 192, 0.15);
+}
+
+/* hover effect of card
+.card:hover {
+  box-shadow: 0 10px 15px 0 inset grey;
+} */
+
+.card-body img {
+  padding: 1rem;
+  border-radius: 50%;
+  width: auto;
+  height: 10rem;
+}
+
+.card-info {
+  text-align: center;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}

@@ -1,0 +1,29 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+
+div {
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+    width: 50px;
+    background-color: #00c3ff;
+    align-items: center;
+}
+
+.div2 {
+    height: 50px;
+}
+
+.div3 {
+    height: 50px;
+    margin-top: 2rem;
+}
+
+.div4 {
+    height: 50px;
+    margin-top: 3.6rem;
+}
