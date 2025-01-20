@@ -5,14 +5,27 @@ div {
 h1 {
     text-align: center;
 }
-table {
+.table1 > table {
     border: 5px solid gray;
     border-collapse: collapse;
 
 }
-th, td {
+.th1{
     padding: 0.5rem;
     text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
   }
+
+/* design for next table */
+.table2 > table {
+    border: 1px solid greenyellow;
+
+}
+
+.th2 {
+    padding: 0 50px 0;
+    text-align: center;
+    border: 1px solid black;
+
+}

@@ -8,90 +8,118 @@
 </head>
 <body>
     <h1>Time Table</h1>
-    <div>
+    <div class="table1">
 
     <table>
         <!-- 1st row -->
         <tr>
-            <th>Day/period</th>
-            <th>I<br>9:30-10:20</th>
-            <th>II<br>10:20-11:10</th>
-            <th>III<br>11:10-12:00</th>
-            <th>12:00-12:40</th>
-            <th>IV<br>12:40-1:30</th>
-            <th>V<br>1:30-2:20</th>
-            <th>VI<br>2:20-3:10</th>
-            <th>VII<br>3:10-4:00</th>
+            <th class="th1">Day/period</th>
+            <th class="th1" >I<br>9:30-10:20</th>
+            <th class="th1" >II<br>10:20-11:10</th>
+            <th class="th1" >III<br>11:10-12:00</th>
+            <th class="th1" >12:00-12:40</th>
+            <th class="th1" >IV<br>12:40-1:30</th>
+            <th class="th1" >V<br>1:30-2:20</th>
+            <th class="th1" >VI<br>2:20-3:10</th>
+            <th class="th1" >VII<br>3:10-4:00</th>
         </tr>
 
         <!-- 2nd row -->
         <tr>
-            <th>MON</th>
-            <td>eng</td>
-            <td>mat</td>
-            <td>che</td>
-            <td rowspan="6"><strong>l<br>u<br>n<br>c<br>h</strong></td>
-            <td colspan="3">LAB</td>
-            <td>phy</td>
+            <th class="th1" >MON</th>
+            <td class="th1" >eng</td>
+            <td class="th1" >mat</td>
+            <td class="th1" >che</td>
+            <td class="th1"  rowspan="6"><strong>l<br>u<br>n<br>c<br>h</strong></td>
+            <td class="th1"  colspan="3">LAB</td>
+            <td class="th1" >phy</td>
         </tr>
         <!-- style="text-orientation: upright;writing-mode: vertical-lr;" -->
         <!-- 3rd row -->
         <tr>
-            <th>TUE</th>
-            <td colspan="3">LAB</td>
+            <th class="th1">TUE</th>
+            <td class="th1" colspan="3">LAB</td>
 
-            <td>eng</td>
-            <td>che</td>
-            <td>mat</td>
-            <td>SPORTS</td>
+            <td class="th1">eng</td>
+            <td class="th1">che</td>
+            <td class="th1">mat</td>
+            <td class="th1">SPORTS</td>
         </tr>
 
         <!-- 4th row -->
         <tr>
-            <th>WED</th>
-            <td>mat</td>
-            <td>phy</td>
-            <td>eng</td>
+            <th class="th1">WED</th>
+            <td class="th1">mat</td>
+            <td class="th1">phy</td>
+            <td class="th1">eng</td>
 
-            <td>che</td>
-            <td colspan="3">LIBRARY </td>
+            <td class="th1">che</td>
+            <td class="th1" colspan="3">LIBRARY </td>
         </tr>
 
         <!-- 5th row -->
         <tr>
-            <th>THU</th>
-            <td>phy</td>
-            <td>eng</td>
-            <td>che</td>
+            <th class="th1">THU</th>
+            <td class="th1">phy</td>
+            <td class="th1">eng</td>
+            <td class="th1">che</td>
 
-            <td colspan="3">LAB</td>
-            <td>Mat</td>
+            <td class="th1" colspan="3">LAB</td>
+            <td class="th1">Mat</td>
         </tr>
 
         <!-- 6th row -->
-        <tr>
-            <th>FRI</th>
-            <td colspan="3">LAB</td>
+        <tr> 
+            <th class="th1">FRI</th>
+            <td class="th1" colspan="3">LAB</td>
 
-            <td>mat</td>
-            <td>che</td>
-            <td>eng</td>
+            <td class="th1">mat</td>
+            <td class="th1">che</td>
+            <td class="th1">eng</td>
 
-            <td>phy</td>
+            <td class="th1">phy</td>
         </tr>
 
         <!-- 7th row -->
         <tr>
-            <th>SAT</th>
-            <td>eng</td>
-            <td>che</td>
-            <td>mat</td>
+            <th class="th1">SAT</th>
+            <td class="th1">eng</td>
+            <td class="th1">che</td>
+            <td class="th1">mat</td>
 
-            <td colspan="3">SEMINAR </td>
-            <td>SPORTS</td>
+            <td class="th1" colspan="3">SEMINAR </td>
+            <td class="th1">SPORTS</td>
         </tr>
     </table>
-</div>
+    </div>
     
+    <br>
+    <h1>Table in HTML</h1>
+    <div class="table2">
+        <table >
+            <tr>
+                <td class="th2" rowspan="2"><p>A</p></td>
+                <td class="th2"><p>B</p></td>
+                <td class="th2" rowspan="3"><p>D</p></td>
+                <td class="th2" colspan="2"><p>E</p></td>
+                <td class="th2"><p>F</p></td>
+            </tr>
+            <tr>
+                <td class="th2"><p>C</p></td>
+                <td class="th2" rowspan="2" ><p>H</p></td>
+                <td class="th2" rowspan="2" ><p>G</p></td>
+                <td class="th2" rowspan="2" ><p>I</p></td>
+            </tr>
+            <tr>
+                <td class="th2" colspan="2"><p>J</p></td>
+            </tr>
+            <tr>
+                <td class="th2" colspan="3"><p>K</p></td>
+                <td class="th2"><p>L</p></td>
+                <td class="th2" colspan="2"><p>M</p></td>
+            </tr>
+
+        </table>
+    </div>
 </body>
 </html>
